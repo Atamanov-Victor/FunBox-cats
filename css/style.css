@@ -1,0 +1,332 @@
+@font-face {
+  font-family: "Exo 2.0 Thin";
+  src: url("../fonts/Exo2.0-Thin/Exo2.0-Thin.otf") format("opentype");
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: url("../img/Pattern.svg") repeat center;
+  margin: 0 0 0 0;
+}
+
+.container {
+  width: 95%;
+  max-width: 1120px;
+  margin: auto;
+}
+
+.main-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__title {
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 1px 1px #000000;
+  font-size: 36px;
+  margin: auto;
+  font-family: 'Exo 2.0 Thin', sans-serif;
+  font-weight: 100;
+}
+
+.main-cards {
+  padding-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+}
+
+.card:hover .card-wrapper {
+  background: linear-gradient(135deg, transparent 30px, #2ea8e6 0) top left;
+}
+
+.card:hover .card__weight {
+  background: #2ea8e6;
+}
+
+.card-wrapper {
+  width: 320px;
+  height: 480px;
+  background: linear-gradient(135deg, transparent 30px, #1698d9 0) top left;
+  position: relative;
+  border-radius: 12px;
+}
+
+.card-info {
+  width: 312px;
+  height: 472px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: linear-gradient(135deg, transparent 28px, #ffffff 0) top left;
+  position: absolute;
+  left: 4px;
+  bottom: 4px;
+  border-radius: 12px;
+  padding: 14px 47px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card__subtitle {
+  font-weight: 100;
+  font-size: 16px;
+  margin: 0px;
+  color: #666666;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.card__subtitle_active {
+  color: #e62e7a;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 48px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.card__taste {
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.card__adds {
+  margin-top: 15px;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.card__adds_bold {
+  font-weight: 700;
+}
+
+.card__img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.card__weight {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #1698d9;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 21px;
+  line-height: 0.6;
+  padding-top: 10px;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.card__weight_bold {
+  font-size: 42px;
+  color: #ffffff !important;
+}
+
+.card__buy {
+  color: #ffffff;
+  display: block;
+  margin: auto;
+  text-align: center;
+  max-width: 215px;
+  font-size: 13px;
+  font-weight: 100;
+  margin-top: 14px;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.card__buy_link {
+  border-bottom: 1px dashed #1698d9;
+  color: #1698d9;
+  text-decoration: none;
+}
+
+.card__buy_dot {
+  color: #1698d9;
+}
+
+.card__buy-active {
+  display: none;
+}
+
+.card__description {
+  display: none;
+  font-size: 13px;
+  color: #ffffff;
+  text-align: center;
+  margin-top: 14px;
+  font-weight: 100;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.card__description-active {
+  display: block !important;
+}
+
+.card__description-disabled {
+  display: none;
+  color: #ffff66 !important;
+  font-size: 13px;
+  text-align: center;
+  margin-top: 14px;
+  font-family: 'Trebuchet MS', sans-serif;
+}
+
+.card-selected .card-wrapper {
+  background: linear-gradient(135deg, transparent 30px, #d91667 0) top left;
+}
+
+.card-selected .card__buy {
+  display: none;
+}
+
+.card-selected .card__description {
+  display: block;
+}
+
+.card-selected .card__weight {
+  background: #d91667;
+}
+
+.card-selected-hover .card-wrapper {
+  background: linear-gradient(135deg, transparent 30px, #e52e7a 0) top left !important;
+}
+
+.card-selected-hover .card__weight {
+  background: #e52e7a !important;
+}
+
+.card-selected-hover .card__subtitle {
+  color: #e52e7a !important;
+}
+
+.card-selected:hover .card-wrapper {
+  background: linear-gradient(135deg, transparent 30px, #d91667 0) top left;
+}
+
+.card-selected:hover .card__weight {
+  background: #d91667;
+}
+
+.disable {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  opacity: 0.3;
+  font-size: 15px;
+}
+
+.disable:hover {
+  opacity: 1;
+}
+
+.card-disabled {
+  pointer-events: none;
+}
+
+.card-disabled span, .card-disabled h1, .card-disabled h2, .card-disabled h3 {
+  color: #b3b3b3;
+}
+
+.card-disabled .card-wrapper {
+  background: linear-gradient(135deg, transparent 30px, #b3b3b3 0) top left;
+}
+
+.card-disabled .card__weight {
+  background: #b3b3b3;
+}
+
+.card-disabled .card__img {
+  opacity: 0.5;
+}
+
+.card-disabled .card__description-disabled {
+  display: block;
+}
+
+.card-disabled .card__buy {
+  display: none;
+}
+
+.card-disabled .card__description {
+  display: none !important;
+}
+
+@media (max-width: 1024px) {
+  .main-cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .card {
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

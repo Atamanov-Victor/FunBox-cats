@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "Exo 2.0 Thin";
+    src: url("../fonts/Exo2.0-Thin/Exo2.0-Thin.otf") format("opentype");
+    font-weight: normal;
+    font-display: swap;
+    font-style: normal;
+}
+
+@mixin exo {
+    font-family: 'Exo 2.0 Thin', sans-serif;
+    font-weight: 100;
+}
+
+@mixin trebuchet {
+    font-family: 'Trebuchet MS', sans-serif
+}
